@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão do corpo da página. */
+    margin: 0; /* Remove a margem padrão do corpo. */
+    padding: 0; /* Remove o preenchimento padrão do corpo. */
+    background-color: #f8f8f8; /* Define a cor de fundo do corpo. */
+}
+
+header {
+    background-color: #fff; /* Define a cor de fundo do cabeçalho. */
+    padding: 20px; /* Adiciona espaçamento interno ao cabeçalho. */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao cabeçalho. */
+    display: flex; /* Usa flexbox para layout no cabeçalho. */
+    flex-wrap: wrap; /* Permite que os itens do cabeçalho se ajustem em várias linhas, se necessário. */
+    justify-content: space-between; /* Distribui os itens com espaço igual entre eles. */
+    align-items: center; /* Alinha os itens verticalmente ao centro. */
+}
+
+.logo-title {
+    display: flex; /* Usa flexbox para o layout da logo e título. */
+    align-items: center; /* Alinha verticalmente logo e título ao centro. */
+}
+
+.logo {
+    width: 150px; /* Define a largura da logo. */
+    height: auto; /* Mantém a proporção da logo. */
+    margin-right: 10px; /* Adiciona espaçamento à direita da logo. */
+}
+
+header nav ul {
+    list-style: none; /* Remove marcadores de lista. */
+    margin: 0; /* Remove a margem padrão da lista. */
+    padding: 0; /* Remove o preenchimento padrão da lista. */
+    display: flex; /* Usa flexbox para o layout da lista de navegação. */
+}
+
+header nav li {
+    margin-right: 20px; /* Adiciona espaçamento à direita dos itens da lista de navegação. */
+}
+
+header nav a {
+    text-decoration: none; /* Remove o sublinhado dos links. */
+    color: #333; /* Define a cor do texto dos links. */
+}
+
+header form {
+    display: flex; /* Usa flexbox para o layout do formulário. */
+    align-items: center; /* Alinha os itens do formulário verticalmente ao centro. */
+    background-color: #ffeb3b; /* Define a cor de fundo do formulário. */
+    border-radius: 50px; /* Arredonda os cantos do formulário. */
+    padding: 5px 10px; /* Adiciona espaçamento interno ao formulário. */
+}
+
+header input[type="text"] {
+    border: none; /* Remove a borda dos campos de texto. */
+    outline: none; /* Remove o contorno ao focar no campo de texto. */
+    background: transparent; /* Torna o fundo do campo de texto transparente. */
+    color: #000000; /* Define a cor do texto no campo de texto. */
+    margin-right: 10px; /* Adiciona espaçamento à direita do campo de texto. */
+}
+
+header button[type="submit"] {
+    border: none; /* Remove a borda do botão de envio. */
+    background: transparent; /* Torna o fundo do botão transparente. */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão. */
+    color: #131313; /* Define a cor do texto do botão. */
+    font-size: 1.2em; /* Define o tamanho da fonte do botão. */
+}
+
+header .user {
+    text-decoration: none; /* Remove o sublinhado do link. */
+    color: #ffeb3b; /* Define a cor do texto do link. */
+    font-size: 1.5em; /* Define o tamanho da fonte do link. */
+    margin-right: 30px; /* Adiciona espaçamento à direita do link. */
+}
+
+.featured-recipes {
+    display: grid; /* Usa o layout de grid para receitas em destaque. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Define colunas de grid que se ajustam automaticamente. */
+    gap: 20px; /* Adiciona espaçamento entre os itens do grid. */
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir o elemento. */
+    padding: 20px; /* Adiciona espaçamento interno ao contêiner de receitas. */
+    border-radius: 10px; /* Arredonda os cantos do contêiner de receitas. */
+}
+
+.recipe {
+    background-color: #fff; /* Define a cor de fundo dos itens de receita. */
+    border-radius: 10px; /* Arredonda os cantos dos itens de receita. */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil aos itens de receita. */
+    overflow: hidden; /* Garante que o conteúdo não exceda o contêiner. */
+    text-align: center; /* Alinha o texto ao centro dentro do item de receita. */
+    text-decoration: none; /* Remove a decoração de texto (como sublinhado). */
+    color: #333; /* Define a cor do texto dos itens de receita. */
+    transition: transform 0.3s ease; /* Adiciona a transição ao transform */
+}
+
+.recipe:hover {
+    background-color: #ffeb3b; /* Muda a cor de fundo ao passar o mouse sobre o item de receita. */
+}
+
+.recipe img {
+    width: 100%; /* Define a largura da imagem como 100% do contêiner. */
+    height: auto; /* Mantém a proporção da imagem. */
+}
+
+.recipe h2 {
+    margin: 10px 0; /* Adiciona espaçamento acima e abaixo do título da receita. */
+    font-size: 1.2em; /* Define o tamanho da fonte do título da receita. */
+    color: #333; /* Define a cor do título da receita. */
+}
+
+.recipe-menu {
+    display: flex; /* Usa flexbox para o layout do menu de receitas. */
+    justify-content: center; /* Centraliza o menu horizontalmente. */
+    background-color: #ede179; /* Define a cor de fundo do menu de receitas. */
+    border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior ao menu de receitas. */
+    font-size: 1.5em; /* Define o tamanho da fonte do menu de receitas. */
+}
+
+.recipe-menu ul {
+    list-style: none; /* Remove marcadores de lista. */
+    padding: 0; /* Remove o preenchimento da lista. */
+    margin: 0; /* Remove a margem da lista. */
+    display: flex; /* Usa flexbox para o layout da lista do menu. */
+}
+
+.recipe-menu ul li {
+    margin: 0 39px; /* Adiciona espaçamento horizontal entre os itens do menu. */
+}
+
+.recipe-menu ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links do menu. */
+    color: #333; /* Define a cor do texto dos links do menu. */
+    font-size: 14px; /* Define o tamanho da fonte dos links do menu. */
+    font-weight: bold; /* Define a espessura da fonte dos links do menu. */
+    text-transform: uppercase; /* Transforma o texto dos links em maiúsculas. */
+    transition: color 0.3s ease; /* Adiciona uma transição suave na cor ao passar o mouse sobre o link. */
+}
+
+.recipe-menu ul li a:hover {
+    color: #000000; /* Muda a cor do texto ao passar o mouse sobre o link. */
+}
+
+.articles {
+    padding: 20px; /* Adiciona espaçamento interno à seção de artigos. */
+}
+
+.articles h1 {
+    font-size: 2em; /* Define o tamanho da fonte do título principal dos artigos. */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título principal. */
+}
+
+.articles article {
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo de cada artigo. */
+    padding: 15px; /* Adiciona espaçamento interno ao artigo. */
+    border: 1px solid #e8e5cafc; /* Adiciona uma borda ao redor do artigo. */
+    border-radius: 8px; /* Arredonda os cantos do artigo. */
+}
+
+.articles article h2 {
+    font-size: 1.5em; /* Define o tamanho da fonte do título do artigo. */
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo do título do artigo. */
+}
+
+.articles article p {
+    font-size: 1em; /* Define o tamanho da fonte do texto do artigo. */
+    line-height: 1.6; /* Define a altura da linha para o texto do artigo. */
+}
+
+.articles article a {
+    color: #007bff; /* Define a cor dos links no artigo. */
+    text-decoration: none; /* Remove o sublinhado dos links. */
+}
+
+.articles article a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado aos links ao passar o mouse. */
+}
+
+.video-section {
+    padding: 20px; /* Adiciona espaçamento interno à seção de vídeos. */
+    text-align: center; /* Centraliza o texto dentro da seção de vídeos. */
+}
+
+.video-section h2 {
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título da seção de vídeos. */
+}
+
+.video-wrapper {
+    display: flex; /* Usa flexbox para o layout dos vídeos. */
+    justify-content: center; /* Centraliza os vídeos horizontalmente. */
+    gap: 10px; /* Adiciona espaçamento entre os vídeos. */
+    flex-wrap: wrap; /* Permite que os vídeos se ajustem em várias linhas se necessário. */
+}
+
+iframe {
+    width: 300px; /* Define a largura dos iframes de vídeo. */
+    height: 200px; /* Define a altura dos iframes de vídeo. */
+    border: none; /* Remove a borda dos iframes. */
+    margin: 0 5px; /* Adiciona espaçamento horizontal aos iframes. */
+}
+
+.call-to-action {
+    text-align: center; /* Centraliza o texto na seção de chamada para ação. */
+    margin: 20px 0; /* Adiciona espaçamento acima e abaixo da seção de chamada para ação. */
+}
+
+.button {
+    padding: 10px 20px; /* Adiciona espaçamento interno ao botão. */
+    border: none; /* Remove a borda do botão. */
+    border-radius: 5px; /* Arredonda os cantos do botão. */
+    background-color: #ffeb3b; /* Define a cor de fundo do botão. */
+    color: #000000; /* Define a cor do texto do botão. */
+    text-decoration: none; /* Remove a decoração de texto do botão. */
+    font-weight: bold; /* Define a espessura da fonte do botão. */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão. */
+    display: inline-block; /* Faz com que o botão se comporte como um bloco inline. */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f1f1f1;
+}
+
+.footer-recipes {
+    margin-left: 20px;
+}
+
+.footer-recipes h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-recipes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-recipes ul li {
+    margin-bottom: 10px;
+}
+
+.footer-recipes ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.footer-recipes ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-signup {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.footer-signup p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.signup-button {
+    display: inline-block;
+    background-color: #ffd700;
+    color: black;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.signup-button:hover {
+    background-color: #e6b800;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Alinha os itens do cabeçalho em uma coluna em telas menores. */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Alinha os itens de navegação em uma coluna em telas menores. */
+        align-items: center; /* Centraliza os itens de navegação em telas menores. */
+    }
+
+    header nav li {
+        margin: 10px 0; /* Adiciona espaçamento vertical entre os itens de navegação em telas menores. */
+    }
+}
+
+@media (max-width: 480px) {
+    header form {
+        flex-direction: column; /* Alinha os itens do formulário em uma coluna em telas muito pequenas. */
+        width: 100%; /* Define a largura do formulário como 100% do contêiner. */
+    }
+
+    header input[type="text"] {
+        width: 100%; /* Define a largura do campo de texto como 100% do contêiner. */
+        margin-bottom: 10px; /* Adiciona espaçamento abaixo do campo de texto em telas pequenas. */
+    }
+}
